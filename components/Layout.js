@@ -144,6 +144,8 @@ export default function Layout(props) {
         isAuthenticated={true}
       />
       <script type="text/javascript">_satellite.pageBottom();</script>
+      <script src="/invitation-manager/Overlay.js" />
+      <script src="/invitation-manager/InvitationManager.js" />
     </>
   )
 }

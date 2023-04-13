@@ -26,6 +26,9 @@ export default function MetaData(props) {
 
         <script src="https://assets.adobedtm.com/be5dfd287373/9b9cb7867b5b/launch-cad75bf2f0d2-staging.min.js"></script>
         {/*eslint-enable */}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" />
+
+        <link rel="stylesheet" href="/invitation-manager/Overlay.css"></link>
       </Head>
     </>
   )
