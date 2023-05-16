@@ -24,30 +24,28 @@ export default function Index(props) {
           </div>
           <div className="flex w-max container py-11 mx-auto font-display">
             <div className="grid grid-cols-2 gap-2 xl:gap-6">
-              <Link href="/en/my-dashboard">
-                <a
-                  className="font-display rounded focus:ring-1 focus:ring-black focus:ring-offset-2 py-2 px-10 whitespace-pre bg-[#173451] text-white text-center border border-[#173451] active:bg-[#21303F] hover:bg-#245C81 grid place-items-center"
-                  // onClick={props.onClick}
-                  role="button"
-                  draggable="false"
-                  lang="en"
-                  id="english-button"
-                >
-                  English
-                </a>
+              <Link
+                href="/en/my-dashboard"
+                className="font-display rounded focus:ring-1 focus:ring-black focus:ring-offset-2 py-2 px-10 whitespace-pre bg-[#173451] text-white text-center border border-[#173451] active:bg-[#21303F] hover:bg-#245C81 grid place-items-center"
+                // onClick={props.onClick}
+                role="button"
+                draggable="false"
+                lang="en"
+                id="english-button"
+              >
+                English
               </Link>
 
-              <Link href="/fr/mon-tableau-de-bord">
-                <a
-                  className="font-display rounded focus:ring-1 focus:ring-black focus:ring-offset-2 py-2 px-10 whitespace-pre bg-[#173451] text-white text-center border border-[#173451] active:bg-[#21303F] hover:bg-#245C81 grid place-items-center"
-                  // onClick={props.onClick}
-                  role="button"
-                  draggable="false"
-                  lang="fr"
-                  id="french-button"
-                >
-                  Français
-                </a>
+              <Link
+                href="/fr/mon-tableau-de-bord"
+                className="font-display rounded focus:ring-1 focus:ring-black focus:ring-offset-2 py-2 px-10 whitespace-pre bg-[#173451] text-white text-center border border-[#173451] active:bg-[#21303F] hover:bg-#245C81 grid place-items-center"
+                // onClick={props.onClick}
+                role="button"
+                draggable="false"
+                lang="fr"
+                id="french-button"
+              >
+                Français
               </Link>
             </div>
           </div>
@@ -55,24 +53,22 @@ export default function Index(props) {
 
         <div className="relative py-8 bg-gray-light text-p h-auto min-w-[18.75rem] w-[18.75rem] flex justify-between p-6 xl:w-[31.25rem] xl:items-center">
           <div className="w-28 text-base xl:text-p xl:w-max font-body text-bright-blue-dark">
-            <Link href="https://www.canada.ca/en/transparency/terms.html">
-              <a
-                className="inline-block w-28 xl:w-max mr-0 hover:underline splash-a text-lg"
-                lang="en"
-                data-cy="terms"
-              >
-                Terms &amp; conditions
-              </a>
+            <Link
+              href="https://www.canada.ca/en/transparency/terms.html"
+              className="inline-block w-28 xl:w-max mr-0 hover:underline splash-a text-lg"
+              lang="en"
+              data-cy="terms"
+            >
+              Terms &amp; conditions
             </Link>
             <span> • </span>
-            <Link href="https://www.canada.ca/fr/transparence/avis.html">
-              <a
-                className="inline-block hover:underline font-body text-lg"
-                lang="fr"
-                data-cy="avis"
-              >
-                Avis
-              </a>
+            <Link
+              href="https://www.canada.ca/fr/transparence/avis.html"
+              className="inline-block hover:underline font-body text-lg"
+              lang="fr"
+              data-cy="avis"
+            >
+              Avis
             </Link>
           </div>
           <img className="h-auto w-24 xl:w-28" src="/wmms-blk.svg" alt="" />

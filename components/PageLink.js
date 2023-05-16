@@ -17,15 +17,15 @@ export default function PageLink(props) {
         </h2>
         <div className="font-body pb-8  text-xl">
           <span className=" text-gray-darker">{props.accessText}</span>
-          <Link href={props.href}>
-            <a
-              id={`link-for-${linkID}`}
-              data-cy={props.dataCy}
-              data-gc-analytics-customclick={`${props.refPageAA}:${props.linkText}`}
-              className="text-blue-default hover:text-blue-hover visited:text-purple-medium underline"
-            >
-              {props.linkText}
-            </a>
+          <Link
+            href={props.href}
+            id={`link-for-${linkID}`}
+            data-cy={props.dataCy}
+            data-gc-analytics-customclick={`${props.refPageAA}:${props.linkText}`}
+            className="text-blue-default hover:text-blue-hover visited:text-purple-medium underline"
+            legacyBehavior
+          >
+            {props.linkText}
           </Link>
           <span className=" text-gray-darker">.</span>
         </div>
