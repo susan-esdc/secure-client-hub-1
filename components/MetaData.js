@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Script from 'next/script'
 
 export default function MetaData(props) {
   const d = props.language === 'en' ? props.data.data_en : props.data.data_fr
@@ -41,9 +42,15 @@ export default function MetaData(props) {
         {/* eslint-disable */}
 
         {process.env.ENVIRONMENT === 'production' ? (
-          <script src="//assets.adobedtm.com/be5dfd287373/9b9cb7867b5b/launch-59d77766b86a.min.js"></script>
+          <Script
+            strategy="beforeInteractive"
+            src="//assets.adobedtm.com/be5dfd287373/9b9cb7867b5b/launch-59d77766b86a.min.js"
+          ></Script>
         ) : (
-          <script src="https://assets.adobedtm.com/be5dfd287373/9b9cb7867b5b/launch-cad75bf2f0d2-staging.min.js"></script>
+          <Script
+            strategy="beforeInteractive"
+            src="https://assets.adobedtm.com/be5dfd287373/9b9cb7867b5b/launch-cad75bf2f0d2-staging.min.js"
+          ></Script>
         )}
 
         {/*eslint-enable */}
